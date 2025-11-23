@@ -4,11 +4,19 @@ class SvgSelected{
     _currentSvgSelected = null;
 
     set(el){
+
+        if(this._currentSvgSelected) this.remove(this._currentSvgSelected);
+
         this._currentSvgSelected = el;
+        
+        var item = svgManagement.drawList.find( e => e.id == this._currentSvgSelected.__gameObjectId);
+        if(item) item.select = true;
     }
 
-    remove(el){
-         this._currentSvgSelected = null;
+    remove(el){ 
+        var item = svgManagement.drawList.find( e => e.id == this._currentSvgSelected.__gameObjectId);
+        if(item) item.select = false;
+        this._currentSvgSelected = null;
     }
 
     get(el){

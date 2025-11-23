@@ -6,12 +6,16 @@
     <title>BPM</title>
      <style>
         body { margin: 0; overflow: hidden; }
-        svg { width: 100vw; height: 100vh; background: #f1f1f1; }
+        svg { width: 100vw; height: 100vh; background: #f1f1f1;
+background-image: url('./scripts/assets/images/quadriculado.avif');
+background-size: cover;
+background-repeat: no-repeat;}
         text { user-select: none; }
     </style>
 </head>
 <body>
-    <svg id="svg"  width="800" height="800">
+    <svg id="svg">
+        <g id="select"></g>
         <g id="edges"></g>
         <g id="nodes"></g>
         <g id="tokens"></g>
@@ -20,13 +24,14 @@
 
     <script  src="./scripts/const/mouseKey.js"></script>
 
-
+    <script  src="./scripts/core/svgManagement.js"></script>
     <script  src="./scripts/core/loop.js"></script>
     <script  src="./scripts/core/svgSelected.js"></script>
     <script  src="./scripts/core/inputSystem.js"></script>
     <script  src="./scripts/core/scene.js"></script>
     <script  src="./scripts/core/svgRenderer.js"></script>
     
+
 
     <script  src="./scripts/scene/mainScene.js"></script>
 
