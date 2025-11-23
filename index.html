@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPM</title>
+     <style>
+        body { margin: 0; overflow: hidden; }
+        svg { width: 100vw; height: 100vh; background: #f1f1f1; }
+        text { user-select: none; }
+    </style>
+</head>
+<body>
+    <svg id="svg"  width="800" height="800">
+        <g id="edges"></g>
+        <g id="nodes"></g>
+        <g id="tokens"></g>
+        <g id="labels"></g>
+    </svg>
+
+    <script  src="./scripts/const/mouseKey.js"></script>
+
+
+    <script  src="./scripts/core/loop.js"></script>
+    <script  src="./scripts/core/svgSelected.js"></script>
+    <script  src="./scripts/core/inputSystem.js"></script>
+    <script  src="./scripts/core/scene.js"></script>
+    <script  src="./scripts/core/svgRenderer.js"></script>
+    
+
+    <script  src="./scripts/scene/mainScene.js"></script>
+
+
+    <script  src="./scripts/index.js"></script>
+</body>
+</html>
